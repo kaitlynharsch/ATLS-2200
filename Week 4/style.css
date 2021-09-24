@@ -1,0 +1,45 @@
+body {
+  font-family: 'ABeeZee', sans-serif;
+  background-color: #EBECE9;
+}
+
+#hello {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2vw;
+  text-decoration: underline;
+}
+
+#intro {
+  font-size: 1.5vw;
+  background-color: #4A92BF;
+  margin: auto;
+  width: 50vw;
+  border: 3px dashed #FDC7AF;
+  padding: 10px;
+}
+
+img {
+  width: 30vw;
+}
+
+#goals {
+  font-size: 1.5vw;
+  background-color: #4A92BF;
+  margin: auto;
+  width: 50vw;
+  border: 3px dashed #FDC7AF;
+  padding: 10px;
+}
+
+#links {
+  font-size: 1.5vw;
+  background-color: #4A92BF;
+  margin: auto;
+  width: 50vw;
+  border: 3px dashed #FDC7AF;
+  padding: 10px;
+}
