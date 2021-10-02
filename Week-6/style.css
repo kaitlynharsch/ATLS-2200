@@ -1,0 +1,17 @@
+p {
+  color: red;
+  font-family: helvetica;
+}
+
+h1, h2 {
+  font-family: "bebas Neue";
+}
+
+#hero {
+  width: 100vw;
+}
+
+#hero img {
+  width: 100vw;
+  position: relative;
+}
