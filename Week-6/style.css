@@ -47,7 +47,7 @@ img {
 }
 
 button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: #5f6368 solid 2px;
   font-size: 15px;
   background-color: #f7cdc5;
@@ -59,4 +59,8 @@ button:hover{
   border: black solid 3px;
   font-size: 16px;
   color: black;
+}
+
+#no {
+  margin-left: 20px;
 }
