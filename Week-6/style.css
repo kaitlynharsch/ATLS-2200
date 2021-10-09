@@ -1,17 +1,64 @@
+body {
+  background-color: #009e88;
+}
+
 p {
-  color: red;
-  font-family: helvetica;
+  color: #f3cbc6;
+  font-family: "roboto condensed";
+  font-size: 18px;
 }
 
 h1, h2 {
   font-family: "bebas Neue";
 }
 
-#hero {
-  width: 100vw;
+h2 {
+  font-size: 30px;
 }
 
-#hero img {
-  width: 100vw;
+img {
+  width: 80vw;
   position: relative;
+  border-radius: 30px;
+  border: #f3cbc6 solid 1px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#herotext {
+  font-size: 50px;
+  margin: auto;
+  width: 50%;
+}
+
+#hidden {
+  color: #009e88;
+}
+
+#hidden2 {
+  color: #009e88;
+}
+
+#hidden3 {
+  color: #009e88;
+}
+
+button {
+  border-radius: 2px;
+  border: #5f6368 solid 2px;
+  font-size: 15px;
+  background-color: #f7cdc5;
+  font-family: "roboto condensed";
+  color: #5f6368;
+}
+
+button:hover{
+  border: black solid 3px;
+  font-size: 16px;
+  color: black;
 }

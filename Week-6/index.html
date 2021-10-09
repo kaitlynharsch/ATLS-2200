@@ -3,43 +3,51 @@
 <head>
   <title>Week 6</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto+Condensed">
 </head>
 
 <body>
-<section id="hero">
-  <h1 id="herotext">Welcome to my site</h1>
-  <img alt="hero" src="hero.jpg" id="heroimg">
+<section id="hero" class="center">
+  <h1 id="herotext">Adrenaline Junkies Unite!</h1>
+  <img alt="hot air balloons" src="hero.jpg" id="heroimg" class="center">
 </section>
 <section>
-<h2>This is my first Section</h2>
-<p>asdasd</p>
-<p>asdasd</p>
+<h2>Welcome to The Hot Air Balloon Capital of the World!</h2>
+<p>The beautiful city of Cappadocia in Tukey has been named the hot air balloon capital of the world! The very first balloon ride in Turkey was in 1991, and ever since then, the hot air balloon industry has increased in popularity immensely and has become the most popular attraction in the region!</p>
+<p>More hot air balloons take off every single day than anywhere else in the world! Before the pandemic, the area averaged between 150 to 200 balloons in the air per day!</p>
 </section>
 
 <section>
-<h2>This is my first Section</h2>
-<p>asdasd</p>
-<p>asdasd</p>
+<h2>Not Flying, but Floating</h2>
+<p>You must understand that “flying” in a hot air balloon isn’t like flying in an airplane, because you can’t control where you go or land. You’re just floating where the wind takes you, which is pretty exciting.</p>
+<p>These balloons can go as high as 3000 feet, depending on the weather.</p>
 </section>
 
-<section id="three">
-  <h2>This section contains a button</h2>
-  <button id="mybutton">Click this button</button>
-  <button id="mybutton2">Click this button</button>
+<section id="buttons">
+  <h2>Would you ever go on a hot air balloon ride here?</h2>
+  <button id="yes">Yes, absolutely! Let the adrenaline flow!</button>
+  <button id="no">Are you insane?! I'm afraid of heights!</button>
+</section>
+
+<section id="hidden">
+  <h2>Learn More!</h2>
+  <p id="hidden2">If you would like to learn more, you can visit the Cappadocia Balloon Festival Website <a href="https://cappadociaballoonfestival.com/" id="hidden3"> here!</a></p>
 </section>
 
 <script>
   console.log("javascript working");
-  document.getElementById("mybutton").addEventListener("click", function(){alert("you pushed the button!")});
-  document.getElementById("mybutton2").addEventListener("click", buttonClicked);
-  document.getElementById("hero").addEventListener("click", heroClicked);
-  function buttonClicked(){
-    alert("you pushed the second button!")
-    document.getElementById("herotext").innerHTML = "You are not welcome!";
+  document.getElementById("yes").addEventListener("click", colorChange);
+  document.getElementById("no").addEventListener("click", textChange);
+
+  function colorChange(){
+    document.getElementById("hidden").style.color = 'black';
+    document.getElementById("hidden2").style.color = '#f3cbc6';
+    document.getElementById("hidden3").style.color = 'tan';
   }
-  function heroClicked(){
-    alert("you pushed the hero!")
+
+  function textChange(){
+    alert("Looks like you won't be riding in a hot air balloon any time soon...");
+    document.getElementById("herotext").innerHTML = "May I Suggest Something Closer to the Ground Instead?";
   }
 </script>
 
