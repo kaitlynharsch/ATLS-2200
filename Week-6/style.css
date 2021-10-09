@@ -17,7 +17,6 @@ h2 {
 }
 
 img {
-  width: 80vw;
   position: relative;
   border-radius: 30px;
   border: #f3cbc6 solid 1px;
@@ -27,13 +26,12 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
 }
 
 #herotext {
   font-size: 50px;
-  margin: auto;
-  width: 50%;
+  text-align: center;
 }
 
 #hidden {
