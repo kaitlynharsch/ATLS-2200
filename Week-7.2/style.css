@@ -1,0 +1,36 @@
+body {
+  background-position: center;
+}
+
+button{
+  border-radius: 8px;
+  padding: 1vh 2vw;
+  float: right;
+  background-color: black;
+  color: #e8eaed;
+  font-family: "EB Garamond";
+  font-weight: bold;
+}
+
+button:hover{
+  border: #fff solid 1px;
+}
+
+button:active{
+  color: #c3c6c9
+}
+
+#qtext {
+  color: #56AFC8;
+  font-family: "EB Garamond";
+  font-weight: 200;
+  padding: 20px;
+}
+
+#quotesection {
+background-color: #EBECE9;
+font-size: 20px;
+margin: 30vh 20vw;
+padding: 5vh;
+border-radius: 8px;
+}
