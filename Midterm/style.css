@@ -1,3 +1,7 @@
+body {
+  background-color: #d0d0d0;
+}
+
 #title {
 font-family: "Architects Daughter";
 font-size: 30px;
@@ -8,6 +12,7 @@ color: #741b47;
 #tabs {
   display: flex;
   margin: 10vh 10vw 0 10vw;
+  border-bottom: 4px solid #C4A7A3;
 }
 
 #items {
@@ -56,8 +61,10 @@ h2 {
 
 .active{
   background-color: #6e6c68;
-  border: 4px solid #C4A7A3;
+  border-top: 4px solid #C4A7A3;
+  border-right: 4px solid #C4A7A3;
   border-bottom: none;
+  border-left: 4px solid #C4A7A3;
   color: #E9AFD4;
 }
 

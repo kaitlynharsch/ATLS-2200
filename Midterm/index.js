@@ -46,7 +46,6 @@ function setActive(e){
 day = document.getElementsByClassName('active')[0].id;
 console.log(day);
 document.getElementById(day+"menu").style.display = "block";
-console.log(document.getElementById('image').innerHTML);
 document.getElementById('image').innerHTML = "<img src='assets/" + day + ".jpg' >";
 
 
