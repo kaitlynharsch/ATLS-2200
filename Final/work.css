@@ -1,0 +1,53 @@
+@media screen and (min-width:800px){
+
+#hello h1{
+  font-size: 60px
+}
+
+}
+@media screen and (max-width:801px){
+  #hello h1{
+    font-size: 30px
+  }
+
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5E5DE;
+  margin:0%;
+}
+
+#navbar {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 40px 5px 0;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-family: "Montserrat";
+  padding: 15px;
+  margin: 10px;
+  color: #18A0FB;
+  text-decoration: none;
+
+}
+
+.active {
+  color: #DFAA96;
+}
+
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+}
