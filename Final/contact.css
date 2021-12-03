@@ -10,7 +10,6 @@
     font-size: 30px
   }
 
-
 }
 
 body {
@@ -50,9 +49,8 @@ nav a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  max-width: 95vw;
-  padding-top: 2%;
-  padding-bottom: 9%;
+  width: 60%;
+  padding-top: 6%;
+  padding-bottom: 6%;
   filter: drop-shadow(5px 5px 5px #222222);
 }

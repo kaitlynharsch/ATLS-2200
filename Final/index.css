@@ -9,9 +9,11 @@
   #hello h1{
     font-size: 30px
   }
-
-
 }
+
+html {
+  scroll-behavior: smooth;
+ }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -67,13 +69,14 @@ h1 {
 
 }
 
-button {
+#introduction a {
   background-color: #18A0FB;
   color: white;
   font-family: "Montserrat";
   padding: 10px 30px 10px 30px;
   border: none;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 #medium-logo {
