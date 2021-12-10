@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Kaitlyn Harsch HomePage</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,64 +14,94 @@
 
   <div id="navbar">
     <nav>
-      <p id="logo"> KAITLYN HARSCH </p>
-      <a href="index.html">Home</a>
-      <a href="athletics.html" class="active">Athletics</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
+      <div id="left">
+        <img id="smallLogo" src="assets/navLogo.jpg" alt="My personal logo that states my name, 'Kaitlyn Harsch', and below states 'Design Student'">
+        <p id="logo"> Kaitlyn Harsch </p>
+      </div>
+      <div id="right">
+        <a href="index.html">Home</a>
+        <a href="athletics.html" class="active">Athletics</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </div>
 
 
   <section>
   <div id="athleticsPage-top">
-    <div>
-      <img id="skiing" src="assets/eldora.JPG" alt="My CU Athletics headshot from my senior year (taken August 2021)">
-    </div>
-    <div id="bio">
-      <h1>Division I Alpine Ski Racer.</h1>
-      <p>I have been ski racing since I was 5 years old. I grew up skiing  for Team Summit at Copper, and switched teams to Ski & Snowboard Club Vail in 2010. I graduated a year early from high school and got recruited to ski on the University of Colorado’s NCAA Division I Alpine Ski Team in 2018. I am now a senior on the team, and the Women’s Team Captain this year!</p>
-      <a href ="https://cubuffs.com/sports/skiing/roster/kaitlyn-harsch/15709" class="button" target="_blank">CU Athletics Bio</a>
-    </div>
-  </div>
-  </section>
-
-
   <!-- Slideshow container -->
   <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="assets/eldora.JPG" style="width:100%">
+      <div class="numbertext">1 / 7</div>
+      <img src="assets/eldora.JPG">
       <div class="text">CU Home Opener: GS at Eldora, Jan 2020</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="assets/slalom1.jpg" style="width:100%">
+      <div class="numbertext">2 / 7</div>
+      <img src="assets/slalom1.jpg">
       <div class="text">CU Home Opener: Slalom at Eldora, Jan 2020</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="assets/montanaGS.JPG" style="width:100%">
+      <div class="numbertext">3 / 7</div>
+      <img src="assets/montanaGS.JPG">
       <div class="text">MSU Invitational: GS at Bridger Bowl, Feb 2020</div>
     </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img src="assets/steamboatPodium.jpg">
+      <div class="text">Steamboat FIS Race: GS U21 Podium</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="assets/girlGang.jpg">
+      <div class="text">DU Invitational: GS at Aspen, Jan 2020</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="assets/mikAndMe.jpg">
+      <div class="text">Training at Copper: With my teammate Mikaela Tommy, Oct 2018</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 7</div>
+      <img src="assets/wpGroupShot.jpg">
+      <div class="text">Winter Park FIS Race: Team Picture following the GS race, Jan 2020</div>
+    </div>
+
+
+
 
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <br>
+  <!-- <br> -->
 
   <!-- The dots/circles -->
-  <div style="text-align:center">
+  <div id="dots">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
   </div>
-
+  <div id="bio">
+    <h1>Division I Alpine Ski Racer.</h1>
+    <p>I have been ski racing since I was 5 years old. I grew up skiing  for Team Summit at Copper, and switched teams to Ski & Snowboard Club Vail in 2010. I graduated a year early from high school and got recruited to ski on the University of Colorado’s NCAA Division I Alpine Ski Team in 2018. I am now a senior on the team, and the Women’s Team Captain this year!</p>
+    <a href ="https://cubuffs.com/sports/skiing/roster/kaitlyn-harsch/15709" class="button" target="_blank">CU Athletics Bio</a>
+  </div>
+</div>
+</section>
 
 
 <script type="text/javascript" src="index.js"></script>

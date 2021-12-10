@@ -17,14 +17,22 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  /* font-weight: 400px */
   background-color: #F5E5DE;
   margin:0%;
+}
+
+#smallLogo {
+  height: auto;
+  width: auto;
+  max-width: 10vw;
+  max-height: 10vh;
 }
 
 #navbar {
   background-color: white;
   border: 1px solid black;
-  padding: 5px 40px 5px 0;
+  padding: 1vh 1vw;
   /* position: fixed;
   top: 0;
   width: 100%; */
@@ -32,17 +40,34 @@ body {
 
 nav {
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
 }
 
 nav a {
   font-family: "Montserrat";
-  padding: 15px;
-  margin: 10px;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
   color: #18A0FB;
   text-decoration: none;
   float: right;
+}
 
+#left {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+#right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logo {
+  font-family: "Comfortaa";
+  padding-left: 1vw;
 }
 
 .active {
@@ -62,7 +87,7 @@ nav a {
 }
 
 #headshot {
-  width: 690px;
+  /* width: 690px; */
 }
 
 h1 {
@@ -130,10 +155,13 @@ h1 {
   padding: 2% 7% 2% 7%;
 }
 
-#resume-pic {
+#resume-pic img {
   background-color: white;
   padding: 2% 7% 2% 7%;
-
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  /* Above three lines maybe dont do anything */
 }
 
 #portfolio h1 {
@@ -167,10 +195,6 @@ h1 {
   padding: 9% 4% 10% 4%;
 }
 
-#skiing {
-  width: 690px;
-}
-
 
 #bio h1 {
   font-size: 46px;
@@ -192,13 +216,23 @@ h1 {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  width: 100%;
   position: relative;
   margin: auto;
+  height: 90vh;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides img {
+  object-fit: cover;
+  width: 50vw;
+  height: 100%;
 }
 
 /* Next & previous buttons */
@@ -261,6 +295,14 @@ h1 {
   transition: background-color 0.6s ease;
 }
 
+#dots {
+  position: absolute;
+  top: 100%;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
 .picactive, .dot:hover {
   background-color: #C4C4C4;
 }
@@ -281,4 +323,138 @@ h1 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 20px;
+} */
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+}
+
+#portfolioGrid {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* #contactMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  text-align: center;
+  object-fit: cover;
+} */
+
+#contactMe {
+  display: flex;
+  margin: 5vh 5vw;
+
+}
+
+.options {
+  flex-grow: 1;
+  width: auto;
+  /* margin: 3vw; */
+  /* border: 3px solid blue; */
+  background-color: white;
+  text-align: center;
+}
+
+
+#costaRica, #oregon {
+  max-width: 33vw;
+  width: 100%;
+  height: 100%;
+  /* height: 30vh;
+  width: 25vw; */
+  /* object-fit: fill; */
+}
+
+@media screen and (max-width: 900px) {
+  #costaRica, #oregon {
+    display: none;
+  }
+}
+
+#contactSection {
+  padding-top: 10vh;
+}
+
+
+.socials {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.socials img {
+  max-width: 20vw;
+  max-height: 20vh;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  margin: 1vh 1vw;
+  /* object-position: 0px 0px 20px 0px; */
+
 }
