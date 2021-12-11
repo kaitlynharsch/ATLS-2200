@@ -180,12 +180,13 @@ h2 {
 #portfolio {
   font-size: 12px;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 #portfolio h2 {
   font-size: 3em;
   font-weight: lighter;
-  padding: 0 7% 0 7%;
+  padding: 0 7% 3% 7%;
   text-align: center;
 }
 
