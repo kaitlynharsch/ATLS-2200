@@ -1,4 +1,4 @@
-@media screen and (min-width:800px){
+/* @media screen and (min-width:800px){
 
 #hello h1{
   font-size: 60px
@@ -9,7 +9,7 @@
   #hello h1{
     font-size: 30px
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -31,7 +31,7 @@ body {
 
 #navbar {
   background-color: white;
-  border: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding: 1vh 1vw;
   /* position: fixed;
   top: 0;
@@ -72,42 +72,52 @@ nav a {
 
 .active {
   color: #DFAA96;
+  font-weight: bold;
 }
 
 
 #homePage-top {
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   flex-grow: 1;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 #introduction {
-  padding: 9% 7% 0 7%;
+  padding: 8% 7% 2% 7%;
+  font-size: 12px;
 }
 
-#headshot {
-  /* width: 690px; */
+#headshot img {
+  width: 100vw;
+  max-width: 50vw;
+  height: auto;
+  object-fit: fill;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 4em;
+}
+
+#introduction h3 {
+  font-size: 2.3em;
+  font-weight: lighter;
 
 }
 
-#introduction a {
-  background-color: #18A0FB;
-  color: white;
-  font-family: "Montserrat";
-  padding: 10px 30px 10px 30px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
+#introduction p {
+  font-size: 1.75em;
+  font-weight: lighter;
+}
+
+#learnMore {
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }
 
 #medium-logo {
   background-color: white;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 #medium-logo img {
@@ -124,16 +134,18 @@ h1 {
 
 #about {
   padding: 8% 7% 8% 7%;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+  font-size: 12px;
 }
 
-/* h2 {
-  padding-bottom: 2%;
-} */
+h2 {
+  font-size: 3em;
+  font-weight: lighter;
+}
 
 #pics {
   background-color: white;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 
@@ -151,8 +163,9 @@ h1 {
 }
 
 #resume {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding: 2% 7% 2% 7%;
+  font-size: 12px;
 }
 
 #resume-pic img {
@@ -164,12 +177,14 @@ h1 {
   /* Above three lines maybe dont do anything */
 }
 
-#portfolio h1 {
-  font-size: 64px;
+#portfolio {
+  font-size: 12px;
   text-align: center;
 }
 
 #portfolio h2 {
+  font-size: 3em;
+  font-weight: lighter;
   padding: 0 7% 0 7%;
   text-align: center;
 }
@@ -185,31 +200,39 @@ h1 {
 }
 
 #athleticsPage-top {
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   flex-grow: 1;
   border-bottom: 1px solid black;
+
 }
 
 #bio {
   padding: 9% 4% 10% 4%;
+  font-size: 12px;
 }
 
-
 #bio h1 {
-  font-size: 46px;
+  font-size: 3.6em;
+}
 
+#bio p {
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-bottom: 2%;
 }
 
 .button {
   background-color: #18A0FB;
   color: white;
   font-family: "Montserrat";
-  padding: 10px 30px 10px 30px;
+  padding: 1em 2em 1em 2em;
   border: none;
   border-radius: 6px;
   text-decoration: none;
+  font-size: 1.5em;
 }
+
 
 /* * {box-sizing:border-box} */
 
@@ -264,17 +287,19 @@ h1 {
 
 /* Caption text */
 .text {
+  background-color: white;
   color: black;
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 5px;
   width: 100%;
   text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
+  background-color: white;
   color: black;
   font-size: 20px;
   padding: 8px 12px;
@@ -334,18 +359,20 @@ h1 {
 } */
 
 /* Center website */
-.main {
+/* .main {
   max-width: 1000px;
   margin: auto;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 50px;
   word-break: break-all;
-}
+} */
 
 .row {
   margin: 8px -16px;
+  justify-content: center;
+
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -412,18 +439,28 @@ h1 {
 
 }
 
+.pic1 {
+  flex-grow: .5;
+}
+
 .options {
-  flex-grow: 1;
+  flex-grow: 4;
   width: auto;
   /* margin: 3vw; */
   /* border: 3px solid blue; */
   background-color: white;
   text-align: center;
+  max-height: 600px;
+}
+
+.pic2 {
+  flex-grow: .5;
 }
 
 
 #costaRica, #oregon {
   max-width: 33vw;
+  max-height: 600px;
   width: 100%;
   height: 100%;
   /* height: 30vh;
@@ -435,10 +472,43 @@ h1 {
   #costaRica, #oregon {
     display: none;
   }
+  #headshot {
+    display: none;
+  }
+  #athleticsPage-top {
+    flex-direction: column;
+    flex-grow: 1;
+    /* border: 3px solid blue; */
+  }
+  .myslides img {
+    /* display: block;
+    width: 100vw;
+    object-fit: fill;
+    height: 100%;
+    /* max-width:100%;
+    max-height:100%;
+    vertical-align: middle; */
+    /* border: 3px solid green; */ */
+  }
+
 }
 
 #contactSection {
-  padding-top: 10vh;
+  /* padding-top: 5%; */
+  font-size: 12px;
+}
+
+#contactSection h4 {
+  font-size: 4em;
+}
+
+#contactSection h5 {
+  font-size: 2em;
+}
+
+#contactSection h6 {
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 
@@ -446,15 +516,16 @@ h1 {
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  padding-bottom: 6vh;
 }
 
 .socials img {
-  max-width: 20vw;
-  max-height: 20vh;
-  height: auto;
-  width: auto;
-  object-fit: cover;
-  margin: 1vh 1vw;
+  max-width: 7vw;
+  /* max-height: 7vh; */
+  height: 75%;
+  width: 75%;
+  object-fit: fill;
+  margin: .2vh .5vw;
   /* object-position: 0px 0px 20px 0px; */
 
 }
